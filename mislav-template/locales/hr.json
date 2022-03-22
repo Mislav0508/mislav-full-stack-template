@@ -1,0 +1,56 @@
+{ 
+  "seo": {
+    "seo_home_title": "Apartmani Renata",
+    "seo_home_description": "Apartmani Renata",
+    "seo_rooms_title": "Naše sobe",
+    "seo_rooms_description": "Apartmani Renata - Naše sobe",
+    "seo_about_title": "O nama",
+    "seo_about_description": "Apartmani Renata - O nama",
+    "seo_gallery_title": "Galerija",
+    "seo_gallery_description": "Apartmani Renata - Galerija",
+    "seo_explore_title": "Istraži",
+    "seo_explore_description": "Apartmani Renata - Istraži",
+    "seo_contact_title": "Kontakt",
+    "seo_contact_description": "Apartmani Renata - Kontakt"
+  },
+  "picker": {
+    "en": "Engleski",
+    "hr": "Hrvatski",
+    "de": "Njemački"
+  },
+  "navbar": {
+    "home": "Početna",
+    "our_rooms": "Naše sobe",
+    "rooms": {
+      "rooms": "Sobe",
+      "Superior": "Superior Soba",
+      "Deluxe": "Deluxe Soba",
+      "Signature": "Signature Soba",
+      "Luxury": "Luxury Suite Soba"
+    },
+    "about": "O nama",
+    "gallery": "Galerija",
+    "explore": "Istraži",
+    "contact": "Kontakt"
+  },
+  "slider": {
+    "titles": {
+      "one": "Novi Vinodolski",
+      "two": "Luksuzni komfor",
+      "three": "Apartmani uz more",
+      "four": "Srce Hrvatske"
+    },
+    "subtitles": {
+      "one": "Otključajte vrata svjetskog čuda",
+      "two": "Dizajn, kurirana umjetnost i gostoljubivi timovi",
+      "three": "Više od mjesta za boravak!",
+      "four": "Otkrijte čaroliju hrvatske obale"
+    }
+  },
+  "footer": {
+    "address": "adresa",
+    "reservation": "rezervacije",
+    "rating": "Apartmani sa četiri zvjezdice",
+    "awards": "Nagrade"
+  }
+}

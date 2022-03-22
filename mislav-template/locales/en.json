@@ -1,0 +1,56 @@
+{
+  "seo": {
+    "seo_home_title": "Apartments Renata",
+    "seo_home_description": "Apartments Renata",
+    "seo_rooms_title": "Our Rooms",
+    "seo_rooms_description": "Apartments Renata - Our Rooms",
+    "seo_about_title": "About Us",
+    "seo_about_description": "Apartments Renata - About Us",
+    "seo_gallery_title": "Gallery",
+    "seo_gallery_description": "Apartments Renata - Gallery",
+    "seo_explore_title": "Explore",
+    "seo_explore_description": "Apartments Renata - Explore",
+    "seo_contact_title": "Contact",
+    "seo_contact_description": "Apartments Renata - Contact"
+  },
+  "picker": {
+    "en": "English",
+    "hr": "Croatian",
+    "de": "German"
+  },
+  "navbar": {
+    "home": "Home",
+    "our_rooms": "Our Rooms",
+    "rooms": {
+      "rooms": "Rooms",
+      "Superior": "Superior Room",
+      "Deluxe": "Deluxe Room",
+      "Signature": "Signature Room",
+      "Luxury": "Luxury Suite Room"
+    },
+    "about": "About us",
+    "gallery": "Gallery",
+    "explore": "Explore",
+    "contact": "Contact"
+  },
+  "slider": {
+    "titles": {
+      "one": "Novi Vinodolski",
+      "two": "Luxury Comfort",
+      "three": "Beachfront Apartments",
+      "four": "Heart of Croatia"
+    },
+    "subtitles": {
+      "one": "Unlock the door to a wonder of the world",
+      "two": "Design, curated art and welcoming teams",
+      "three": "More than a place to stay!",
+      "four": "Discover the magic of the croatian coast"
+    }
+  },
+  "footer": {
+    "address": "our address",
+    "reservation": "reservation",
+    "rating": "Four star apartments",
+    "awards": "Awards"
+  }
+}

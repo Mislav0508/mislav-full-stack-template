@@ -1,0 +1,12 @@
+:root{
+  --primary:white;
+  --secondary: #222222;
+
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;  
+}
+

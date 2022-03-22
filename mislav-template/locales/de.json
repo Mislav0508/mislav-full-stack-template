@@ -1,0 +1,56 @@
+{
+  "seo": {
+    "seo_home_title": "Ferienwohnungen Renata",
+    "seo_home_description": "Ferienwohnungen Renata",
+    "seo_rooms_title": "Unsere Zimmer",
+    "seo_rooms_description": "Ferienwohnungen Renata - Unsere Zimmer",
+    "seo_about_title": "Ueber uns",
+    "seo_about_description": "Ferienwohnungen Renata - Ueber uns",
+    "seo_gallery_title": "Galerie",
+    "seo_gallery_description": "Ferienwohnungen Renata - Galerie",
+    "seo_explore_title": "Entdecken",
+    "seo_explore_description": "Ferienwohnungen Renata - Entdecken",
+    "seo_contact_title": "Kontakt",
+    "seo_contact_description": "Ferienwohnungen Renata - Kontakt"
+  },
+  "picker": {
+    "en": "Englisch",
+    "hr": "Kroatisch",
+    "de": "Deutsch"
+  },
+  "navbar": {
+    "home": "Startseite",
+    "our_rooms": "Zimmer",
+    "rooms": {
+      "rooms": "Zimmer",
+      "Superior": "Superior Zimmer",
+      "Deluxe": "Deluxe Zimmer",
+      "Signature": "Signature Zimmer",
+      "Luxury": "Luxury Suite Zimmer"
+    },
+    "about": "Über uns",
+    "gallery": "Galerie",
+    "explore": "Entdecken",
+    "contact": "Kontakt"
+  },
+  "slider": {
+    "titles": {
+      "one": "Novi Vinodolski",
+      "two": "Luxuriöser Komfort",
+      "three": "Apartments am Strand",
+      "four": "Herz von Kroatien"
+    },
+    "subtitles": {
+      "one": "Öffnen Sie die Tür zu einem Weltwunder",
+      "two": "Design, kuratierte Kunst und einladende Teams",
+      "three": "Mehr als eine Unterkunft!",
+      "four": "Entdecken Sie den Zauber der kroatischen Küste"
+    }
+  },
+  "footer": {
+    "address": "Adresse",
+    "reservation": "Reservierungen",
+    "rating": "Fier-Sterne-Wohnungen",
+    "awards": "Auszeichnungen"
+  }
+}
