@@ -31,13 +31,13 @@ export default {
   css: [
     '@/assets/css/global.css',
     '@mdi/font/css/materialdesignicons.min.css'
-
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '@/assets/css/global.css',
     { src: './plugins/vue-carousel.js', mode: 'client' },
+    { src: './plugins/persistedState.client.js', mode: 'client' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -63,32 +63,11 @@ export default {
     '@nuxtjs/dotenv',
     ['nuxt-gmaps', { key: process.env.MAPS_EMBED_API }],
     '@nuxtjs/i18n',
-    '@nuxtjs/axios',
-    '@nuxtjs/auth-next'
+    '@nuxtjs/axios'
   
   ],
 
-  auth: {
-    strategies: {
-      local: {
-        token: {
-          property: 'token',
-          global: true,
-          // required: true,
-          // type: 'Bearer'
-        },
-        user: {
-          property: 'user',
-          // autoFetch: true
-        },
-        endpoints: {
-          login: { url: '/api/auth/login', method: 'post' },
-          logout: { url: '/api/auth/logout', method: 'post' },
-          user: { url: '/api/auth/user', method: 'get' }
-        }
-      }
-    }
-  },
+  middleware: ["auth"],
 
   i18n: {
     locales: [
@@ -103,8 +82,11 @@ export default {
       alwaysRedirect: true, fallbackLocale: 'en', redirectOn: 'root', useCookie: true, cookieCrossOrigin: false, cookieDomain: null, cookieKey: 'i18n_redirected', cookieSecure: false
     }
   },
-
   
+  axios: {
+    baseURL: 'http://localhost:5000/api'
+  },
+ 
   styleResources: {
     scss: [
         '~/assets/scss/main.scss',

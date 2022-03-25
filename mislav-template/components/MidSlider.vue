@@ -90,7 +90,7 @@ export default {
   },
   watch: {
     translateX(val) {
-      console.log(val);
+      // console.log(val);
     }
   },
   mounted() {

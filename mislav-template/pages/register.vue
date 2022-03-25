@@ -16,7 +16,7 @@
                               label="Email"
                               type="email"
                               :rules="emailRules"
-                              v-model="login.email"
+                              v-model="register.email"
                            ></v-text-field>
                            <v-text-field
                               :prepend-icon="icons.mdiKey"
@@ -24,17 +24,28 @@
                               name="password"
                               label="Password"
                               type="password"
-                              v-model="login.password"
+                              v-model="register.password"
                            ></v-text-field>
                         </v-form>
                      </v-card-text>
                      <v-card-actions>
                         <v-spacer></v-spacer>
-                        <NuxtLink :to="localePath('/dashboard')" no-prefetch @click.native="Login(login)">
-                           <v-btn color="primary" 
-                           :disabled="!login.password || !login.email"
-                          >{{ title }}</v-btn>
-                        </NuxtLink>
+                        <v-btn color="primary" 
+                        :disabled="!register.password || !register.email"
+                        @click="Register(register)">{{ title }}</v-btn>
+                        <v-snackbar v-model="snackbar">
+                          {{ error }}
+                          <template v-slot:action="{ attrs }">
+                            <v-btn
+                              color="pink"
+                              text
+                              v-bind="attrs"
+                              @click="snackbar = false"
+                            >
+                              Close
+                            </v-btn>
+                          </template>
+                        </v-snackbar>
                      </v-card-actions>
                   </v-card>
                </v-flex>
@@ -49,39 +60,31 @@ import { mdiAccount , mdiKey  } from '@mdi/js'
 export default {
   data() {
     return {
-      title: 'Login',
+      title: 'Register',
       icons: {
          mdiAccount,
          mdiKey  
       },
-      login: {
+      register: {
          email: 'mislav0508@hotmail.com',
          password: 'test1234'
       },
       emailRules: [ 
       v => !v || /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
-      ]
+      ],
+      error: '',
+      snackbar: false,
     }
   },
   methods: {
-    async Login(login) {    
-       console.log("login");  
-      try {
-      let data = await this.$axios.$post("auth/login", login)
-      this.$store.dispatch('setToken', data.token)
-      this.$store.dispatch('setUser', data.user.email)
-      if (data.user.role == 'admin') {
-         this.$store.dispatch('setIsAdmin', true)
-      }
-      console.log(this.$store.state);
-
-      } catch (err) {
-        console.log(err)
+    async Register(register) {
+      let response = await this.$axios.post('auth/register', register)
+      console.log(response.data.email);
+      if(response.data.email) {
+         this.error = response.data.email
+         this.snackbar = true
       }
     }
-  },
-  mounted() {
-    console.log(this.$store.state);
   }
 }
 </script>
