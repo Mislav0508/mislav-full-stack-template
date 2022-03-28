@@ -30,7 +30,7 @@
                      </v-card-text>
                      <v-card-actions>
                         <v-spacer></v-spacer>
-                        <NuxtLink :to="localePath('/dashboard')" no-prefetch @click.native="Login(login)">
+                        <NuxtLink :to="localePath('/dashboard')" @click.native="Login(login)">
                            <v-btn color="primary" 
                            :disabled="!login.password || !login.email"
                           >{{ title }}</v-btn>
@@ -73,7 +73,6 @@ export default {
       if (data.user.role == 'admin') {
          this.$store.dispatch('setIsAdmin', true)
       }
-      console.log(this.$store.state);
 
       } catch (err) {
         console.log(err)
@@ -81,7 +80,6 @@ export default {
     }
   },
   mounted() {
-    console.log(this.$store.state);
   }
 }
 </script>

@@ -25,6 +25,7 @@
 </template>
 
 <script>
+import en from "../locales/en.json"
 export default {
   head () {
     const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
@@ -45,6 +46,7 @@ export default {
   },
   beforeMount  () {
     window.addEventListener('scroll', this.checkPosition);
+    console.log(en);
   },
   beforeDestroy () {
     window.removeEventListener('scroll', this.checkPosition);

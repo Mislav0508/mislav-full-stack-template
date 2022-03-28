@@ -1,5 +1,5 @@
 <template>
-  <v-container class="dashboard" @click="Logout">
+  <v-container class="dashboard">
 
     <v-row class="navbar pa-10">
       <v-col cols="0" xl="10" lg="10" md="10" sm="10"></v-col>
@@ -14,7 +14,7 @@
     <div class="sidebar">
       <v-container class="text-center">
         <h3 class="pb-10">DASHBOARD</h3>
-        <h4 class="py-5">PAGES</h4>
+        <h4 class="py-5">EDIT PAGES</h4>
         <v-row v-for="(page,i) in pages" :key="i" class="d-flex align-center justify-center py-2">
           <v-btn min-width="7vw">{{ page }}</v-btn>
         </v-row>
@@ -27,7 +27,6 @@
 </template>
 
 <script>
-// {{this.$store.state.user}}
 export default {
   middleware: "auth",
   nuxtI18n: {
@@ -49,7 +48,6 @@ export default {
       this.$store.dispatch('setToken', null)
       this.$store.dispatch('setUser', null)
       this.$store.dispatch('setIsAdmin', false)
-      console.log(this.$store.state);
     }
   },
   mounted() {
