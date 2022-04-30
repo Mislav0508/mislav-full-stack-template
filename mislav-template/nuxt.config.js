@@ -7,6 +7,12 @@ export default {
 
   generate: { fallback: true },
 
+  vue: {
+    config: {
+      productionTip: true
+    }
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - mislav-template',
