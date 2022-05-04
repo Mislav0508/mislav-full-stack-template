@@ -29,6 +29,8 @@
                         </v-form>
                      </v-card-text>
                      <v-card-actions>
+                        <NuxtLink :to="localePath('/')">
+                        <v-btn color="success">Home</v-btn></NuxtLink>
                         <v-spacer></v-spacer>
                         <NuxtLink :to="localePath('/dashboard')" @click.native="Login(login)">
                            <v-btn color="primary" 

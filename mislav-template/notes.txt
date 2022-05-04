@@ -1,1 +1,5 @@
 try Swiper js (cube)
+
+1. Create logout
+2. Put login into Navbar
+3. need to click 2 times login in order to login (fix bug)

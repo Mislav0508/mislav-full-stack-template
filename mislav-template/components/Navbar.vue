@@ -75,6 +75,7 @@
       <v-col cols="2" xl="2" lg="4" md="1" sm="1"></v-col>
 
       <v-col cols="1" xl="3" lg="1" md="1" sm="2" class="d-flex align-center justify-center">
+        <NuxtLink :to="localePath('/login')" :class="[ position > 0 || route !== 3 ? 'link-scroll' : 'link' ]" :id="this.$route.name.includes('contact') ? 'active-link-secondary': ''">Login</NuxtLink>
         <div role="button" 
         :class="sidebar ? 'menu-btn open ' : 'menu-btn'" 
         @click="showSidebar">
